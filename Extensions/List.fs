@@ -22,11 +22,13 @@ module List =
 
         flat origin []
 
+    // removes nulls from a list
     let compact (origin: 'a option list) =
         origin
         |> List.filter (function | None -> false | _ -> true)
         |> List.map (fun x -> x.Value)
 
+    // removes nulls from a list and applies a function
     let compactMap (f: 'a -> 'b) (origin: 'a option list) =
         origin
         |> List.filter (function | None -> false | _ -> true)

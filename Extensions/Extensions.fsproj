@@ -4,6 +4,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="List.fs" />
+    <Compile Include="String.fs" />
+    <Compile Include="Array.fs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="NUnit" Version="3.13.1">
